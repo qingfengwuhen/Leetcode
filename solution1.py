@@ -33,10 +33,10 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        mapDic={}
-        i=0
+        mapDic = {}
+        i = 0
         for num in nums:
-            complement=target-num
+            complement = target - num
             if complement in mapDic:
                 return([i, mapDic.get(complement)])
             mapDic[num] = i
@@ -71,4 +71,4 @@ class Solution(object):
 nums = [2, 4, 11, 15, 6]
 target=8
 p = Solution()
-print(p.twoSum2(nums,target))
+print(p.twoSum2(nums, target))
